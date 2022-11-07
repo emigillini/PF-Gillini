@@ -116,7 +116,7 @@ nav ul li a:hover {
   width: auto;
   height: auto;
   border: 1px solid black;
-  background-image: url(img/fondo3.jpg);
+  background-image: url(fondo3.jpg);
   background-size: cover;
   background-attachment: fixed;
   padding: 10px;
