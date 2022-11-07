@@ -139,7 +139,7 @@ nav{
 .sectionp {
     @include widthheight;
     border: $border;
-    background-image: url(../img/fondo3.jpg);
+    background-image: url(img/fondo3.jpg);
     background-size: cover;
     background-attachment: fixed;
     padding: 10px;
@@ -149,7 +149,7 @@ nav{
 .sectionn{    
     @include widthheight;
     border: $border;
-    background-image: url(../img/fondo6.jpg);
+    background-image: url(img/fondo6.jpg);
     background-size: contain;
     background-position-y: 2cm;
     padding: 10px;
@@ -206,7 +206,7 @@ nav{
 .sectioncom{    
     @include widthheight;
     border: $border;
-    background-image: url(../img/fondo5.jpg);
+    background-image: url(img/fondo5.jpg);
     background-size: cover;
     padding: 10px;  
     h1{ 
@@ -285,7 +285,7 @@ nav{
 .bcont {
     @include widthheight;
     font-weight: 900;
-    background-image: url(../img/black-coffee-g525cfe77a_1280.jpg ) ;
+    background-image: url(img/black-coffee-g525cfe77a_1280.jpg ) ;
     background-size: cover;
     .sectionform .formulario h1{ 
         margin-top: 1cm;
