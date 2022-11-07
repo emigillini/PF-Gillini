@@ -139,11 +139,10 @@ nav{
 .sectionp {
     @include widthheight;
     border: $border;
-    background-image: url(/img/fondo3.jpg);
+    background-image: url(img/fondo3.jpg);
     background-size: cover;
     background-attachment: fixed;
     padding: 10px;
-    
 }
 
 .sectionn{    
