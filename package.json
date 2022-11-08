@@ -1,0 +1,39 @@
+{
+  "name": "preentrega3-gillini",
+  "version": "1.0.0",
+  "description": "preentrega3-gillini-coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emigillini/PreEntrega3-Gillini.git"
+  },
+  "keywords": [
+    "ceramicas",
+    "ceramica",
+    "artesanal",
+    "tazas",
+    "personalizadas",
+    "tazas",
+    "de",
+    "ceramica",
+    "tazas",
+    "de",
+    "cafe",
+    "tazas",
+    "artesanales",
+    "vajilla",
+    "de",
+    "ceramica",
+    "tazas",
+    "platos"
+  ],
+  "author": "Emiliano Gillini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emigillini/PreEntrega3-Gillini/issues"
+  },
+  "homepage": "https://github.com/emigillini/PreEntrega3-Gillini#readme"
+}
