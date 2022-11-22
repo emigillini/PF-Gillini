@@ -217,15 +217,20 @@ nav{
     .header{
         margin-top:10px ;
         margin-bottom:20px ;
+        
         h2{ 
-            margin-top: 20px;
-            font-size: 18px;
-            padding: 10px;
             border: $bordermasgrande;
             text-align: center;
             font-family: $fuente;
+            font-size: 16px;
+            padding: 20px;
+            font-weight: bolder ;
+            color: black;
+            margin: 20px;
             box-shadow: $boxshadow;
-            font-weight: 900;
+            background-color: silver;
+            opacity: 0.6;
+            
         }
 
     }
@@ -239,14 +244,17 @@ nav{
     background-size: cover;
     padding: 10px;  
     h1{ 
-        margin-top: 1cm;
-        margin-bottom: 1cm;
-        font-size: 20px;
-        padding: 10px;
         border: $bordermasgrande;
-        text-align: center;
-        font-family: $fuente;
-        box-shadow: $boxshadow;    
+            text-align: center;
+            font-family: $fuente;
+            font-size: 16px;
+            padding: 20px;
+            font-weight: bolder ;
+            color: black;
+            margin: 20px;
+            box-shadow: $boxshadow;
+            background-color: silver;
+            font-weight: bolder;
     }
     .contenedor{
         @include widthheight;
@@ -260,12 +268,14 @@ nav{
         animation-duration: 7s;
         h2 {
             @include bordes;
-            font-size: 18px;
+            font-size: 20px;
             font-family: $fuente;
             color: aliceblue;
             border-radius: 20%;
             box-shadow: $boxshadow;
             text-align: center;   
+            background-color: silver;
+            font-weight: bolder;
         }
         img {
             object-fit: cover;
@@ -275,15 +285,14 @@ nav{
             border: $bordermasgrande;
             box-shadow: $boxshadow;
         }
-        .video {
+        .video  {
             overflow:hidden;
-            padding-bottom:50px;
             position:relative;
             border: 2px solid black;
             box-shadow: $boxshadow;
-            height: 200px;
-            
+            height: auto;  
         }
+        
         .video iframe{
             height:100%;
             width:100%;
@@ -300,7 +309,8 @@ nav{
                 display: inline-block;
                 padding: 15px 32px;
                 margin: 15px;
-                font-size: 18px;
+                font-size: 20px;
+                font-weight: bolder;
                 cursor: pointer;
                 border-radius: 10%;
                 font-family: $fuente;
@@ -317,21 +327,24 @@ nav{
     background-image: url(img/black-coffee-g525cfe77a_1280.jpg ) ;
     background-size: cover;
     .sectionform .formulario h1{ 
-        margin-top: 1cm;
-        margin-bottom: 1cm;
-        font-size: 20px;
-        padding: 10px;
         border: $bordermasgrande;
         text-align: center;
         font-family: $fuente;
-        box-shadow: $boxshadow;    
+        font-size: 16px;
+        padding: 20px;
+        font-weight: bolder ;
+        color: black;
+        margin: 20px;
+        box-shadow: $boxshadow;
+        background-color: silver;
+        opacity: 0.7 
     }
     form {
         @include bordes;
         background-color: rgb(175, 224, 175);
         font-size: 18px;
         box-shadow: $boxshadow;
-        max-width: 500px;
+        max-width: 900px;
         border-radius:10px;
         margin: auto;
         padding:16px;
@@ -409,15 +422,17 @@ h1{
 }
 
 .h1p{
-    margin-top: 1cm;
-    margin-bottom: 1cm;
-    font-size: 22px;
-    font-weight: 900;
-    padding: 10px;
     border: $bordermasgrande;
     text-align: center;
     font-family: $fuente;
+    font-size: 16px;
+    padding: 20px;
+    font-weight: bolder ;
+    color: black;
+    margin: 20px;
     box-shadow: $boxshadow;
+    background-color: silver;
+    opacity: 0.7;
 }
 
 .mix{
@@ -604,18 +619,19 @@ marquee{
 }
 
 .subir {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     color: red ;
     float: right;
     position: fixed;
     bottom: 80px;
-    right: 30px;
+    right: 10px;
     border: $bordermasgrande;
     border-radius: 50%;
     text-shadow: 3px 3px 3px black;
     box-shadow: $boxshadow;
-    font-size: larger;
+    font-size: 30px;
+    background-color: #11f1a646;
 }
 
 
@@ -659,7 +675,7 @@ marquee{
         border: $border; 
     }
 
-    h1, h2, article, .headerfrase, .sectionn p, .sectionn .header h2{
+    h1, h2, article, .headerfrase, .sectionn p, .sectionn .header h2, .h1p, .sectioncom h1,.bcont .sectionform .formulario h1{
         font-size: 25px;
     }
 
@@ -794,6 +810,13 @@ marquee{
             grid-column: 1/4;
             grid-row: 4/5;
         }
+    }
+
+    .subir {
+        width: 70px;
+        height: 70px;
+        font-size: 45px;
+        right: 30px;
     }
 
 }

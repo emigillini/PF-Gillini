@@ -198,14 +198,17 @@ nav ul li a:hover {
   margin-bottom: 20px;
 }
 .sectionn .header h2 {
-  margin-top: 20px;
-  font-size: 18px;
-  padding: 10px;
   border: 2px solid black;
   text-align: center;
   font-family: "Shadows Into Light", "Courier New", Courier, monospace;
+  font-size: 16px;
+  padding: 20px;
+  font-weight: bolder;
+  color: black;
+  margin: 20px;
   box-shadow: 10px 5px 5px black;
-  font-weight: 900;
+  background-color: silver;
+  opacity: 0.6;
 }
 
 .sectioncom {
@@ -217,14 +220,17 @@ nav ul li a:hover {
   padding: 10px;
 }
 .sectioncom h1 {
-  margin-top: 1cm;
-  margin-bottom: 1cm;
-  font-size: 20px;
-  padding: 10px;
   border: 2px solid black;
   text-align: center;
   font-family: "Shadows Into Light", "Courier New", Courier, monospace;
+  font-size: 16px;
+  padding: 20px;
+  font-weight: bolder;
+  color: black;
+  margin: 20px;
   box-shadow: 10px 5px 5px black;
+  background-color: silver;
+  font-weight: bolder;
 }
 .sectioncom .contenedor {
   width: auto;
@@ -243,12 +249,14 @@ nav ul li a:hover {
   border-bottom: 2px dotted blue;
   border-left: 2px dotted red;
   border-right: 2px dotted yellow;
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Shadows Into Light", "Courier New", Courier, monospace;
   color: aliceblue;
   border-radius: 20%;
   box-shadow: 10px 5px 5px black;
   text-align: center;
+  background-color: silver;
+  font-weight: bolder;
 }
 .sectioncom .contenedor img {
   object-fit: cover;
@@ -260,11 +268,10 @@ nav ul li a:hover {
 }
 .sectioncom .contenedor .video {
   overflow: hidden;
-  padding-bottom: 50px;
   position: relative;
   border: 2px solid black;
   box-shadow: 10px 5px 5px black;
-  height: 200px;
+  height: auto;
 }
 .sectioncom .contenedor .video iframe {
   height: 100%;
@@ -283,7 +290,8 @@ nav ul li a:hover {
   display: inline-block;
   padding: 15px 32px;
   margin: 15px;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: bolder;
   cursor: pointer;
   border-radius: 10%;
   font-family: "Shadows Into Light", "Courier New", Courier, monospace;
@@ -298,14 +306,17 @@ nav ul li a:hover {
   background-size: cover;
 }
 .bcont .sectionform .formulario h1 {
-  margin-top: 1cm;
-  margin-bottom: 1cm;
-  font-size: 20px;
-  padding: 10px;
   border: 2px solid black;
   text-align: center;
   font-family: "Shadows Into Light", "Courier New", Courier, monospace;
+  font-size: 16px;
+  padding: 20px;
+  font-weight: bolder;
+  color: black;
+  margin: 20px;
   box-shadow: 10px 5px 5px black;
+  background-color: silver;
+  opacity: 0.7;
 }
 .bcont form {
   border-top: 3px dotted green;
@@ -315,7 +326,7 @@ nav ul li a:hover {
   background-color: rgb(175, 224, 175);
   font-size: 18px;
   box-shadow: 10px 5px 5px black;
-  max-width: 500px;
+  max-width: 900px;
   border-radius: 10px;
   margin: auto;
   padding: 16px;
@@ -398,15 +409,17 @@ h1 {
 }
 
 .h1p {
-  margin-top: 1cm;
-  margin-bottom: 1cm;
-  font-size: 22px;
-  font-weight: 900;
-  padding: 10px;
   border: 2px solid black;
   text-align: center;
   font-family: "Shadows Into Light", "Courier New", Courier, monospace;
+  font-size: 16px;
+  padding: 20px;
+  font-weight: bolder;
+  color: black;
+  margin: 20px;
   box-shadow: 10px 5px 5px black;
+  background-color: silver;
+  opacity: 0.7;
 }
 
 .mix {
@@ -593,18 +606,19 @@ marquee {
 }
 
 .subir {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   color: red;
   float: right;
   position: fixed;
   bottom: 80px;
-  right: 30px;
+  right: 10px;
   border: 2px solid black;
   border-radius: 50%;
   text-shadow: 3px 3px 3px black;
   box-shadow: 10px 5px 5px black;
-  font-size: larger;
+  font-size: 30px;
+  background-color: rgba(17, 241, 166, 0.2745098039);
 }
 
 @media only screen and (min-width: 768px) {
@@ -640,7 +654,7 @@ marquee {
     font-size: 20px;
     border: 1px solid black;
   }
-  h1, h2, article, .headerfrase, .sectionn p, .sectionn .header h2 {
+  h1, h2, article, .headerfrase, .sectionn p, .sectionn .header h2, .h1p, .sectioncom h1, .bcont .sectionform .formulario h1 {
     font-size: 25px;
   }
   .diapos1:hover, .diapos2:hover, .diapos3:hover, .diapos4:hover {
@@ -775,6 +789,12 @@ marquee {
   .sectioncom .contenedor .descargas1 {
     grid-column: 1/4;
     grid-row: 4/5;
+  }
+  .subir {
+    width: 70px;
+    height: 70px;
+    font-size: 45px;
+    right: 30px;
   }
 }
 @media only screen and (min-width: 1200px) {
