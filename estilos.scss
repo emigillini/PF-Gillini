@@ -94,10 +94,11 @@ header{
         text-align: center;
         padding: 12px; 
         flex: 1;
-        font-weight: 900;
+        font-weight: bolder;
         transform: rotate(6deg);
         animation-name: aparicion;
         animation-duration: 9s;
+        opacity: 1;
     }
 }
 
@@ -133,8 +134,36 @@ nav{
 
 .sectionin{    
     @include widthheight;
-    font-weight: 900;
+    h1{
+        border: $bordermasgrande;
+        text-align: center;
+        font-family: $fuente;
+        font-size: 16px;
+        padding: 20px;
+        font-weight: bolder ;
+        color: black;
+        margin: 20px;
+        box-shadow: $boxshadow;
+        background-color: silver;
+        opacity: 0.7;
+        
+    }
 }
+
+.artind{
+    border: $bordermasgrande;
+    text-align: center;
+    font-family: $fuente;
+    font-size: 16px;
+    padding: 20px;
+    font-weight: bolder ;
+    color: black;
+    margin: 20px;
+    box-shadow: $boxshadow;
+    background-color: silver;
+    opacity: 0.7;
+}
+
 
 .sectionp {
     @include widthheight;
@@ -143,6 +172,7 @@ nav{
     background-size: cover;
     background-attachment: fixed;
     padding: 10px;
+    
 }
 
 .sectionn{    
@@ -399,7 +429,9 @@ h1{
     margin: 3%;
     animation-name: slidein;
     animation-duration: 5s;
+    font-weight: bolder;
 }
+
 
 .videos {
     width: 280px;
@@ -464,15 +496,6 @@ h1{
     padding: 5px;
 }
 
-article{
-    text-align: center ;
-    font-size: 20px;
-    font-family: $fuente;
-    font-weight: 900;
-    padding: 10px;
-    @include widthheight;
-    margin: 3%;
-}
 
 .iproductos {
     @include widthheight;
@@ -529,6 +552,10 @@ article{
     border: $bordermasgrande;
     max-width: 80%;
     margin: 3%;
+    font-family: $fuente;
+    font-weight: 900;
+    font-size: 15px;
+    text-shadow: 10px 10px 10px  rgb(216, 17, 17);
 }
 
 footer{
@@ -552,7 +579,7 @@ footer{
     .mapa{
         margin: 0;
         padding: 5px;
-        font-size: 15px;
+        font-size: 20px;
         font-weight: 900;
     }
     h2{
@@ -600,6 +627,11 @@ marquee{
         grid-gap: 15px;
         justify-content: center;    
         margin: 10px;
+        font-size: 20PX;
+    }
+
+    .artind, .sectionin h1{
+        font-size: 25px;
     }
 
     .video1{
