@@ -122,7 +122,7 @@ nav ul li a:hover {
   margin: 20px;
   box-shadow: 10px 5px 5px black;
   background-color: silver;
-  opacity: 0.7;
+  opacity: 0.85;
 }
 
 .artind {
@@ -136,7 +136,7 @@ nav ul li a:hover {
   margin: 20px;
   box-shadow: 10px 5px 5px black;
   background-color: silver;
-  opacity: 0.7;
+  opacity: 0.85;
 }
 
 .sectionp {
@@ -208,7 +208,7 @@ nav ul li a:hover {
   margin: 20px;
   box-shadow: 10px 5px 5px black;
   background-color: silver;
-  opacity: 0.6;
+  opacity: 0.85;
 }
 
 .sectioncom {
@@ -230,7 +230,7 @@ nav ul li a:hover {
   margin: 20px;
   box-shadow: 10px 5px 5px black;
   background-color: silver;
-  font-weight: bolder;
+  opacity: 0.85;
 }
 .sectioncom .contenedor {
   width: auto;
@@ -302,6 +302,9 @@ nav ul li a:hover {
   background-image: url(img/black-coffee-g525cfe77a_1280.jpg);
   background-size: cover;
 }
+.bcont .sectionform {
+  margin: 15px;
+}
 .bcont .sectionform .formulario h1 {
   border: 2px solid black;
   text-align: center;
@@ -313,7 +316,7 @@ nav ul li a:hover {
   margin: 20px;
   box-shadow: 10px 5px 5px black;
   background-color: silver;
-  opacity: 0.7;
+  opacity: 0.85;
 }
 .bcont form {
   border-top: 3px dotted green;
@@ -416,7 +419,7 @@ h1 {
   margin: 20px;
   box-shadow: 10px 5px 5px black;
   background-color: silver;
-  opacity: 0.7;
+  opacity: 0.85;
 }
 
 .mix {
@@ -761,6 +764,9 @@ marquee {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto;
     align-content: flex-end;
+  }
+  .sectioncom .contenedor h2 {
+    font-size: 22px;
   }
   .sectioncom .contenedor .imagenes1 {
     grid-column: 3/4;

@@ -13,6 +13,20 @@
     height: auto;
 }
 
+@mixin titulos {
+    border: $bordermasgrande;
+    text-align: center;
+    font-family: $fuente;
+    font-size: 16px;
+    padding: 20px;
+    font-weight: bolder ;
+    color: black;
+    margin: 20px;
+    box-shadow: $boxshadow;
+    background-color: silver;
+    opacity: 0.85;
+}
+
 @keyframes slidein {
     from {
     margin-top: 100%;
@@ -86,8 +100,6 @@ header{
             animation-name: ampliacion;
             animation-duration: 3s;
         }
-        
-        
     }
     .headerfrase{
         align-self: center;
@@ -135,33 +147,13 @@ nav{
 .sectionin{    
     @include widthheight;
     h1{
-        border: $bordermasgrande;
-        text-align: center;
-        font-family: $fuente;
-        font-size: 16px;
-        padding: 20px;
-        font-weight: bolder ;
-        color: black;
-        margin: 20px;
-        box-shadow: $boxshadow;
-        background-color: silver;
-        opacity: 0.7;
+        @include titulos;
         
     }
 }
 
 .artind{
-    border: $bordermasgrande;
-    text-align: center;
-    font-family: $fuente;
-    font-size: 16px;
-    padding: 20px;
-    font-weight: bolder ;
-    color: black;
-    margin: 20px;
-    box-shadow: $boxshadow;
-    background-color: silver;
-    opacity: 0.7;
+    @include titulos;
 }
 
 
@@ -172,7 +164,6 @@ nav{
     background-size: cover;
     background-attachment: fixed;
     padding: 10px;
-    
 }
 
 .sectionn{    
@@ -219,22 +210,9 @@ nav{
         margin-bottom:20px ;
         
         h2{ 
-            border: $bordermasgrande;
-            text-align: center;
-            font-family: $fuente;
-            font-size: 16px;
-            padding: 20px;
-            font-weight: bolder ;
-            color: black;
-            margin: 20px;
-            box-shadow: $boxshadow;
-            background-color: silver;
-            opacity: 0.6;
-            
+            @include titulos; 
         }
-
-    }
-    
+    } 
 }
 
 .sectioncom{    
@@ -244,17 +222,7 @@ nav{
     background-size: cover;
     padding: 10px;  
     h1{ 
-        border: $bordermasgrande;
-            text-align: center;
-            font-family: $fuente;
-            font-size: 16px;
-            padding: 20px;
-            font-weight: bolder ;
-            color: black;
-            margin: 20px;
-            box-shadow: $boxshadow;
-            background-color: silver;
-            font-weight: bolder;
+        @include titulos;
     }
     .contenedor{
         @include widthheight;
@@ -285,7 +253,6 @@ nav{
             border: $bordermasgrande;
             box-shadow: $boxshadow;
         }
-    
         .video iframe{
             height:100%;
             width:100%;
@@ -323,18 +290,11 @@ nav{
     font-weight: 900;
     background-image: url(img/black-coffee-g525cfe77a_1280.jpg ) ;
     background-size: cover;
-    .sectionform .formulario h1{ 
-        border: $bordermasgrande;
-        text-align: center;
-        font-family: $fuente;
-        font-size: 16px;
-        padding: 20px;
-        font-weight: bolder ;
-        color: black;
-        margin: 20px;
-        box-shadow: $boxshadow;
-        background-color: silver;
-        opacity: 0.7 
+    .sectionform{
+        margin: 15px;
+        .formulario h1{ 
+        @include titulos;
+    }
     }
     form {
         @include bordes;
@@ -419,17 +379,7 @@ h1{
 }
 
 .h1p{
-    border: $bordermasgrande;
-    text-align: center;
-    font-family: $fuente;
-    font-size: 16px;
-    padding: 20px;
-    font-weight: bolder ;
-    color: black;
-    margin: 20px;
-    box-shadow: $boxshadow;
-    background-color: silver;
-    opacity: 0.7;
+    @include titulos;
 }
 
 .mix{
@@ -443,7 +393,6 @@ h1{
     animation-duration: 5s;
     font-weight: bolder;
 }
-
 
 .videos {
     width: 280px;
@@ -488,13 +437,11 @@ h1{
     grid-row: 3/4;
 }
 
-
 .diapos3{
     @extend .diapos1;
     grid-column: 1/2;
     grid-row: 4/5;
 }
-
 
 .diapos4{
     @extend .diapos1;
@@ -502,12 +449,10 @@ h1{
     grid-row: 4/5;
 }
 
-
 .cdiapos{
     font-family: $fuente;
     padding: 5px;
 }
-
 
 .iproductos {
     @include widthheight;
@@ -631,7 +576,6 @@ marquee{
     background-color: #11f1a646;
 }
 
-
 @media only screen and (min-width:768px) {
     .mix{
         display: grid;
@@ -675,7 +619,6 @@ marquee{
     h1, h2, article, .headerfrase, .sectionn p, .sectionn .header h2, .h1p, .sectioncom h1,.bcont .sectionform .formulario h1{
         font-size: 25px;
     }
-
 
     @for $i from 1 through 4{
         .diapos#{$i}:hover{ transform: scale(1.5) rotate(360deg) scale(0.8);
@@ -771,12 +714,15 @@ marquee{
             grid-row: 5/6;
             margin: 20px;
         }
-    
     }
+
     .sectioncom .contenedor{
         grid-template-columns:auto auto  ;
         grid-template-rows: auto auto auto auto ;
         align-content: flex-end;
+        h2{
+            font-size: 22px;
+        }
         .imagenes1{
             grid-column: 3/4;
             grid-row: 1/2;
@@ -822,7 +768,6 @@ marquee{
         font-size: 20px;
         font-weight: 900;
     }
-
 }
 
     @media only screen and (min-width:1200px) {
