@@ -249,7 +249,7 @@ nav ul li a:hover {
   border-bottom: 2px dotted blue;
   border-left: 2px dotted red;
   border-right: 2px dotted yellow;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Shadows Into Light", "Courier New", Courier, monospace;
   color: aliceblue;
   border-radius: 20%;
@@ -266,17 +266,14 @@ nav ul li a:hover {
   border: 2px solid black;
   box-shadow: 10px 5px 5px black;
 }
-.sectioncom .contenedor .video {
-  overflow: hidden;
-  position: relative;
-  border: 2px solid black;
-  box-shadow: 10px 5px 5px black;
-  height: auto;
-}
 .sectioncom .contenedor .video iframe {
   height: 100%;
   width: 100%;
   position: absolute;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid black;
+  box-shadow: 10px 5px 5px black;
 }
 .sectioncom .contenedor .descargas1 {
   text-align: center;
@@ -582,7 +579,7 @@ footer .pie a:hover {
 footer .mapa {
   margin: 0;
   padding: 5px;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 900;
 }
 footer h2 {
@@ -795,6 +792,12 @@ marquee {
     height: 70px;
     font-size: 45px;
     right: 30px;
+  }
+  footer .mapa {
+    margin: 0;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 900;
   }
 }
 @media only screen and (min-width: 1200px) {

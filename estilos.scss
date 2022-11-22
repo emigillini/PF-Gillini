@@ -268,7 +268,7 @@ nav{
         animation-duration: 7s;
         h2 {
             @include bordes;
-            font-size: 20px;
+            font-size: 18px;
             font-family: $fuente;
             color: aliceblue;
             border-radius: 20%;
@@ -285,18 +285,15 @@ nav{
             border: $bordermasgrande;
             box-shadow: $boxshadow;
         }
-        .video  {
-            overflow:hidden;
-            position:relative;
-            border: 2px solid black;
-            box-shadow: $boxshadow;
-            height: auto;  
-        }
-        
+    
         .video iframe{
             height:100%;
             width:100%;
             position:absolute;
+            overflow:hidden;
+            position:relative;
+            border: 2px solid black;
+            box-shadow: $boxshadow;
         }
         .descargas1{
             text-align: center;
@@ -594,7 +591,7 @@ footer{
     .mapa{
         margin: 0;
         padding: 5px;
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 900;
     }
     h2{
@@ -817,6 +814,13 @@ marquee{
         height: 70px;
         font-size: 45px;
         right: 30px;
+    }
+
+    footer .mapa{
+        margin: 0;
+        padding: 5px;
+        font-size: 20px;
+        font-weight: 900;
     }
 
 }
