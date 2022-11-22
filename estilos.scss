@@ -47,7 +47,7 @@ $colorfondo:  #11f1a6;
 $boxshadow: 10px 5px 5px black; 
 $border:1px solid black;
 $bordermasgrande:2px solid black;
-$fuente: 'Shadows Into Light','Courier New', Courier, monospace;
+$fuente: 'Shadows Into Light','Courier New', Courier, monospace; font
 
 *{  
     margin: 0;
@@ -588,6 +588,7 @@ marquee{
     border-radius: 50%;
     text-shadow: 3px 3px 3px black;
     box-shadow: $boxshadow;
+    font-size: larger;
 }
 
 

@@ -27,7 +27,7 @@
     width: 200%;
   }
 }
-* {
+font * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -583,6 +583,7 @@ marquee {
   border-radius: 50%;
   text-shadow: 3px 3px 3px black;
   box-shadow: 10px 5px 5px black;
+  font-size: larger;
 }
 
 @media only screen and (min-width: 768px) {
